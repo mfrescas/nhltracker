@@ -19,9 +19,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         }
     });
-
-    Person.associate = (models) => {
-    };
-
+    
     return Person;
 }
