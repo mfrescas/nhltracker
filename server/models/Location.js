@@ -1,5 +1,3 @@
-const { INTEGER } = require("sequelize");
-
 module.exports = (sequelize, DataTypes) => {
     const Location = sequelize.define('Location', {
         location_id: {
