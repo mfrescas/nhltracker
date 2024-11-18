@@ -4,8 +4,20 @@ const db = require('./models');
 
 
 // Routers 
-const postRouter = require ('./routes/test');
-app.use("/posts", postRouter);
+const teamsRouter = require ('./routes/teams');
+app.use("/teams", teamsRouter);
+const assetsRouter = require("./routes/assets");
+app.use("/assets", assetsRouter);
+const coachesRouter = require("./routes/coaches");
+app.use("/coaches", coachesRouter);
+const contractsRouter = require("./routes/contracts");
+app.use("/contracts", contractsRouter);
+const locationsRouter = require("./routes/locations");
+app.use("/locations", locationsRouter);
+const playersRouter = require("./routes/players");
+app.use("/players", playersRouter);
+const transactionsRouter = require("./routes/transactions");
+app.use("/transactions", transactionsRouter);
 
 db.sequelize.sync().then(() => {
     app.listen(3001, () => {

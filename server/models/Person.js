@@ -21,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
     });
 
     Person.associate = (models) => {
-        // A person can be either a player or a coach, handled in their respective models.
     };
 
     return Person;
